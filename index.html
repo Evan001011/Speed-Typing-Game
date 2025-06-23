@@ -1,63 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Ultimate Typing Test</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ultimate Typing Test</title>
 
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-<header class="header" role="banner" aria-label="Site header with title and controls">
+    <header class="header" role="banner" aria-label="Site header with title and controls">
 
-  <div class="title-container">
-    <div class="site-title" aria-label="Site title">Ultimate Typing Test</div>
-  </div>
+        <div class="title-container">
+            <div class="site-title" aria-label="Site title">Ultimate Typing Test</div>
+        </div>
 
-  <div class="center-container" role="group" aria-label="Difficulty selection">
-    <div class="diff-container">
-      <button class="diff-btn selected" data-difficulty="easy" aria-pressed="true">Easy</button>
-      <button class="diff-btn" data-difficulty="medium" aria-pressed="false">Medium</button>
-      <button class="diff-btn" data-difficulty="hard" aria-pressed="false">Hard</button>
-    </div>
-  </div>
+        <div class="center-container" role="group" aria-label="Difficulty selection">
+            <div class="diff-container">
+                <button class="diff-btn selected" data-difficulty="easy" aria-pressed="true">Easy</button>
+                <button class="diff-btn" data-difficulty="medium" aria-pressed="false">Medium</button>
+                <button class="diff-btn" data-difficulty="hard" aria-pressed="false">Hard</button>
+            </div>
+        </div>
 
-  <div class="startRestart-container">
-    <button class="startBtn" aria-label="Start Typing Test">START</button>
-    <button class="restartBtn" aria-label="Restart Typing Test">RESTART</button>
-  </div>
+        <div class="startRestart-container">
+            <button class="startBtn" aria-label="Start Typing Test">START</button>
+            <button class="restartBtn" aria-label="Restart Typing Test">RESTART</button>
+        </div>
 
-</header>
+    </header>
 
-<section class="stats" aria-live="polite" aria-atomic="true">
-  <div class="timeContainer" aria-label="Time left">
-    <p>Time left:</p>
-    <span class="time">60</span>
-  </div>
-  <div class="scoreContainer" aria-label="Score">
-    <p>Score:</p>
-    <span class="score">0</span>
-  </div>
-  <div class="wpmContainer" aria-label="Words per minute">
-    <p>WPM:</p>
-    <span class="wpm">0</span>
-  </div>
-  <div class="highScoreContainer" aria-label="High score">
-    <p>Top Score:</p>
-    <span class="highScore">0</span>
-  </div>
-</section>
+    <section class="stats" aria-live="polite" aria-atomic="true">
+        <div class="timeContainer" aria-label="Time left">
+            <p>Time left:</p>
+            <span class="time">60</span>
+        </div>
+        <div class="scoreContainer" aria-label="Score">
+            <p>Score:</p>
+            <span class="score">0</span>
+        </div>
+        <div class="wpmContainer" aria-label="Words per minute">
+            <p>WPM:</p>
+            <span class="wpm">0</span>
+        </div>
+        <div class="highScoreContainer" aria-label="High score">
+            <p>Top Score:</p>
+            <span class="highScore">0</span>
+        </div>
+    </section>
 
-<main class="testContainer" role="main" aria-label="Typing test word container">
-  <p class="test" aria-live="assertive" aria-atomic="true" aria-relevant="text"></p>
-</main>
+    <main class="testContainer" role="main" aria-label="Typing test word container">
+        <p class="test" aria-live="assertive" aria-atomic="true" aria-relevant="text"></p>
+    </main>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
