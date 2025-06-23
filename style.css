@@ -1,8 +1,9 @@
-  * {
+* {
     margin: 0;
     box-sizing: border-box;
-  }
-  body {
+}
+
+body {
     background-color: #333333;
     font-family: "Kosugi Maru", sans-serif;
     font-weight: 400;
@@ -13,9 +14,9 @@
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-  }
+}
 
-  .header {
+.header {
     background-color: #484848;
     height: 20vh;
     display: flex;
@@ -24,43 +25,45 @@
     padding: 0 40px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     user-select: none;
-  }
+}
 
-  .title-container {
+.title-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 12px;
     flex-shrink: 0;
     max-width: 100%;
-  }
-  .site-title {
+}
+
+.site-title {
     font-size: 3.4rem;
     font-weight: 900;
     letter-spacing: 0.08em;
     color: #E98300;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
     user-select: none;
     cursor: default;
     white-space: nowrap;
     line-height: 1.1;
-  }
+}
 
-  .center-container {
+.center-container {
     display: flex;
     align-items: center;
     gap: 20px;
     user-select: none;
     flex-grow: 1;
     justify-content: center;
-  }
+}
 
-  .diff-container {
+.diff-container {
     display: flex;
     gap: 16px;
     user-select: none;
-  }
-  .diff-btn {
+}
+
+.diff-btn {
     padding: 10px 30px;
     font-size: 1.1rem;
     border-radius: 30px;
@@ -69,7 +72,7 @@
     background: linear-gradient(135deg, #555555, #777777);
     color: #fff;
     font-weight: 600;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.4);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
     transition: all 0.3s ease;
     font-family: "Kosugi Maru", sans-serif;
     user-select: none;
@@ -78,21 +81,25 @@
     justify-content: center;
     min-height: 46px;
     min-width: 90px;
-  }
-  .diff-btn.selected {
+}
+
+.diff-btn.selected {
     background: linear-gradient(135deg, #E98300, #FFB347);
     color: #333333;
     box-shadow: 0 5px 15px rgba(255, 152, 0, 0.9);
-  }
-  .diff-btn:hover:not(.selected) {
-    background: linear-gradient(135deg, #666666, #888888);
-  }
+}
 
-  .startRestart-container {
+.diff-btn:hover:not(.selected) {
+    background: linear-gradient(135deg, #666666, #888888);
+}
+
+.startRestart-container {
     display: flex;
     gap: 12px;
-  }
-  .startBtn, .restartBtn {
+}
+
+.startBtn,
+.restartBtn {
     background: linear-gradient(135deg, #ffb347, #ffcc33);
     color: #333333;
     padding: 14px 40px;
@@ -112,17 +119,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .startBtn:hover, .restartBtn:hover {
+}
+
+.startBtn:hover,
+.restartBtn:hover {
     background: linear-gradient(135deg, #ffcc33, #ffb347);
     box-shadow: 0 8px 20px rgba(255, 168, 0, 0.9);
     transform: translateY(-3px);
-  }
-  .restartBtn {
-    display: none;
-  }
+}
 
-  .stats {
+.restartBtn {
+    display: none;
+}
+
+.stats {
     background-color: #484848;
     display: flex;
     justify-content: space-around;
@@ -132,20 +142,32 @@
     user-select: none;
     flex-wrap: wrap;
     gap: 12px;
-  }
-  .scoreContainer, .timeContainer, .wpmContainer, .highScoreContainer {
+}
+
+.scoreContainer,
+.timeContainer,
+.wpmContainer,
+.highScoreContainer {
     display: flex;
     align-items: center;
     font-size: 1.3rem;
     letter-spacing: 0.05em;
     color: white;
     font-weight: 600;
-  }
-  .scoreContainer p, .timeContainer p, .wpmContainer p, .highScoreContainer p {
+}
+
+.scoreContainer p,
+.timeContainer p,
+.wpmContainer p,
+.highScoreContainer p {
     margin-right: 0.6rem;
     user-select: none;
-  }
-  .score, .time, .wpm, .highScore {
+}
+
+.score,
+.time,
+.wpm,
+.highScore {
     color: #E98300;
     font-size: 2.4rem;
     font-weight: 700;
@@ -153,9 +175,9 @@
     min-width: 50px;
     text-align: right;
     user-select: none;
-  }
+}
 
-  .testContainer {
+.testContainer {
     flex-grow: 1;
     display: flex;
     justify-content: center;
@@ -163,8 +185,9 @@
     padding: 0 2rem;
     user-select: none;
     overflow-x: hidden;
-  }
-  .test {
+}
+
+.test {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -178,67 +201,77 @@
     overflow-wrap: break-word;
     word-break: break-word;
     text-shadow:
-      2px 2px 5px rgba(0,0,0,0.5),
-      0 0 8px rgba(233, 131, 0, 0.7);
+        2px 2px 5px rgba(0, 0, 0, 0.5),
+        0 0 8px rgba(233, 131, 0, 0.7);
     transition: all 0.3s ease;
-  }
-  .span {
+}
+
+.span {
     padding: 0.05em 0.1em;
     border-radius: 6px;
     transition: background-color 0.3s ease;
     user-select: none;
     box-shadow: 0 0 5px rgba(255, 168, 0, 0.5);
-  }
-  .background {
+}
+
+.background {
     background-color: #E98300;
     color: #222222;
     box-shadow:
-      0 0 10px #ffb347,
-      inset 0 0 5px #ffa500;
-  }
+        0 0 10px #ffb347,
+        inset 0 0 5px #ffa500;
+}
 
-  @media (max-width: 800px) {
+@media (max-width: 800px) {
     .header {
-      flex-wrap: wrap;
-      height: auto;
-      padding: 20px;
-      justify-content: center;
-      gap: 12px;
+        flex-wrap: wrap;
+        height: auto;
+        padding: 20px;
+        justify-content: center;
+        gap: 12px;
     }
+
     .title-container {
-      max-width: 100%;
-      align-items: center;
-      text-align: center;
-      flex-direction: row;
-      justify-content: center;
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+        flex-direction: row;
+        justify-content: center;
     }
+
     .site-title {
-      font-size: 2.8rem;
-      white-space: nowrap;
+        font-size: 2.8rem;
+        white-space: nowrap;
     }
+
     .center-container {
-      width: 100%;
-      justify-content: center;
-      order: 3;
+        width: 100%;
+        justify-content: center;
+        order: 3;
     }
+
     .diff-container {
-      justify-content: center;
-      flex-wrap: wrap;
+        justify-content: center;
+        flex-wrap: wrap;
     }
+
     .diff-btn {
-      flex-grow: 1;
-      min-width: 100px;
-      margin-bottom: 8px;
+        flex-grow: 1;
+        min-width: 100px;
+        margin-bottom: 8px;
     }
-    .startBtn, .restartBtn {
-      width: 100%;
-      padding: 12px;
-      font-size: 1.3rem;
-      order: 2;
-      height: auto;
+
+    .startBtn,
+    .restartBtn {
+        width: 100%;
+        padding: 12px;
+        font-size: 1.3rem;
+        order: 2;
+        height: auto;
     }
+
     .startRestart-container {
-      width: 100%;
-      justify-content: center;
+        width: 100%;
+        justify-content: center;
     }
-  }
+}
